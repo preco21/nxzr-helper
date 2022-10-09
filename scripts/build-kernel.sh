@@ -42,6 +42,9 @@ mv config .config
 echo "> Merging '.config-fragment' into current '.config'..."
 ./scripts/kconfig/merge_config.sh .config .config-fragment
 
+echo "> Cleaning up the previous build..."
+sudo make clean
+
 # Run the build.
 echo "> Running the build..."
 N_CORES=$(getconf _NPROCESSORS_ONLN)

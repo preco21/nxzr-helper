@@ -10,14 +10,10 @@ fi
 echo "> Checking for updates..."
 sudo apt update && sudo apt dist-upgrade -y
 
-# Install dependencies for building.
+# Install prerequisite for building.
 echo "> Install required dependencies to build kernel..."
 sudo apt install -y build-essential flex bison dwarves libssl-dev libelf-dev
 
 # Do some cleanup.
 echo "> Running some cleanup..."
 sudo apt autoremove -y && sudo apt clean -y
-
-# Copying the defualt `kconfig` to `.config`.
-echo "> Copying default WSL kconfig to '.config' file..."
-cp Microsoft/config-wsl .config

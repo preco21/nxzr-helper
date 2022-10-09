@@ -1,6 +1,11 @@
 #!/usr/bin/env bash
 set -e
 
+if [[ $EUID -ne 0 ]]; then
+  echo "This script must be run as root."
+  exit 1
+fi
+
 if [ ! "$(git rev-parse --is-inside-work-tree 2>/dev/null)" ]; then
   echo "You must run this script within a git repository."
   exit 1
@@ -42,7 +47,7 @@ echo "> Merging '.config-fragment' into current '.config'..."
 # Run the build.
 echo "> Running the build..."
 N_CORES=$(getconf _NPROCESSORS_ONLN)
-make -j $N_CORES && make modules_install -j $N_CORES && make install -j $N_CORES
+sudo make -j $N_CORES && sudo make modules_install -j $N_CORES && sudo make install -j $N_CORES
 
 # Copy the built kernel to `kernel-dist` folder in project root.
 echo "> Copying the resulting kernel image..."

@@ -12,9 +12,7 @@ pushd /lib/firmware/rtl_bt
 
 # Prepare `RTL8761` firmware from `Realtek-OpenSource` repository.
 # - Source: https://github.com/Realtek-OpenSource/android_hardware_realtek/tree/rtk1395/bt/rtkbt/Firmware/BT
-sudo wget https://raw.githubusercontent.com/Realtek-OpenSource/android_hardware_realtek/rtk1395/bt/rtkbt/Firmware/BT/rtl8761bt_fw -O rtl8761b_fw.bin
-sudo wget https://raw.githubusercontent.com/Realtek-OpenSource/android_hardware_realtek/rtk1395/bt/rtkbt/Firmware/BT/rtl8761bt_config -O rtl8761b_config.bin
-sudo cp rtl8761b_fw.bin rtl8761bu_fw.bin
-sudo cp rtl8761b_config.bin rtl8761bu_config.bin
+sudo wget https://raw.githubusercontent.com/Realtek-OpenSource/android_hardware_realtek/rtk1395/bt/rtkbt/Firmware/BT/rtl8761bt_fw -O rtl8761bu_fw.bin
+sudo wget https://raw.githubusercontent.com/Realtek-OpenSource/android_hardware_realtek/rtk1395/bt/rtkbt/Firmware/BT/rtl8761bt_config -O rtl8761bu_config.bin
 
 popd

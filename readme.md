@@ -23,3 +23,7 @@ Assuming you are in WSL + Ubuntu environment:
 ```shell
 ./scripts/build-kernel.sh
 ```
+
+## License
+
+`¯\_(ツ)_/¯`

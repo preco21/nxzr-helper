@@ -15,7 +15,7 @@ Assuming you are in WSL + Ubuntu environment:
 ### Preparing
 
 ```shell
-./scripts/prepare-kernel-build && ./scripts/prepare-firmware
+./scripts/prepare-kernel-build.sh && ./scripts/prepare-firmware.sh
 ```
 
 ### Building the Kernel

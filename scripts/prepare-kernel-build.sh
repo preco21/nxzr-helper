@@ -12,7 +12,7 @@ sudo apt update && sudo apt dist-upgrade -y
 
 # Install dependencies for building.
 echo "> Install required dependencies to build kernel..."
-sudo apt install build-essential flex bison dwarves libssl-dev libelf-dev
+sudo apt install -y build-essential flex bison dwarves libssl-dev libelf-dev
 
 # Do some cleanup.
 echo "> Running some cleanup..."

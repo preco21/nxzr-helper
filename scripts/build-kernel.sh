@@ -44,6 +44,8 @@ echo "> Merging '.config-fragment' into current '.config'..."
 
 echo "> Cleaning up the previous build..."
 sudo make clean
+rm -rf ../kernel-dist/
+mkdir ../kernel-dist/
 
 # Run the build.
 echo "> Running the build..."

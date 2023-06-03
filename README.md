@@ -90,13 +90,13 @@ Run following script to install Alpine Linux to `./staging` directory:
 
 ### Step 2. Setting up the distro
 
-To make the distro to support Bluetooth stuffs, run:
+This will perform the necessary setup and cleanup for the registered distribution so that it is ready to be extracted.
 
 ```powershell
 .\agent\setup-distro.ps1
 ```
 
-## Step 3. Extracting the final `.tar` archive
+### Step 3. Extracting the final `.tar` archive
 
 ```powershell
 .\agent\extract-tar.ps1

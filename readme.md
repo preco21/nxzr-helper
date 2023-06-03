@@ -66,7 +66,7 @@ To install all the required dependencies for building Linux kernel, run:
 
 By default, this script will download the RTL8761 firmware from Realtek's remote server. However, you may need to customize this step if you intend to use a different Bluetooth device firmware.
 
-### Building the Kernel
+### Step 5. Building the Kernel
 
 Finally, this will trigger the kernel build:
 

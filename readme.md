@@ -74,6 +74,31 @@ Finally, this will trigger the kernel build:
 ./kernel/build-kernel.sh
 ```
 
+## Agent
+
+This will build a pre-built `nxzr-agent.tar` file for distribution, along with the `NXZR` executable.
+
+### Step 1. Installing [AlpineWSL](https://github.com/yuk7/AlpineWSL)
+
+We will use [Alpine Linux](https://www.alpinelinux.org/) as a base image to create a lightweight distro package.
+
+Run following script to install Alpine Linux to `./staging` directory:
+
+```powershell
+.\agent\install-alpine-wsl.ps1
+```
+
+### Step 2. Setting up the distro
+
+[WIP]
+
+FIXME:
+## Step . Extracting the final `.tar` archive
+
+```powershell
+.\agent\extract-tar.ps1
+```
+
 ## License
 
 `¯\_(ツ)_/¯`

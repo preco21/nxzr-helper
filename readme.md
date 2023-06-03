@@ -18,7 +18,7 @@ Before working with the scripts below, you will need to install the WSL for your
 
 Run following script to install WSL from scratch.
 
-Please note that this script will **also*** install [usbipd-win](https://github.com/dorssel/usbipd-win/) as it will enable the system to use Bluetooth dongle from the WSL environment.
+Please note that this script will **also** install [usbipd-win](https://github.com/dorssel/usbipd-win/) as it will enable the system to use Bluetooth dongle from the WSL environment.
 
 ```powershell
 .\initial-setup.ps1

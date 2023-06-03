@@ -1,3 +1,7 @@
 .DS_Store
 
 kernel-dist/
+
+# Staging directory is used to store intermediate files created while in setup
+# and packaging of `nxzr-agent`.
+/staging

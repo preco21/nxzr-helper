@@ -24,7 +24,7 @@ echo "> Checking for updates..."
 apk update && apk upgrade
 ## Install required packages.
 echo "> Installing required dependencies..."
-apk add --no-cache openrc linux-tools-usbip hwdata bluez-deprecated dbus
+apk add --no-cache openrc linux-tools-usbip hwdata bluez bluez-deprecated dbus
 ## Link `usbip`
 ln -sf /usr/sbin/usbip /usr/local/bin/usbip
 

@@ -54,9 +54,7 @@ Run submodule setup script:
 ./kernel/upgrade-ubuntu-latest.sh
 ```
 
-### Step 2. Building `WSL2-Linux-Kernel` with Bluetooth support
-
-### Step 3. Preparing toolchains
+### Step 2. Preparing toolchains
 
 To install all the required dependencies for building Linux kernel, run:
 
@@ -64,11 +62,11 @@ To install all the required dependencies for building Linux kernel, run:
 ./kernel/prepare-kernel-build.sh
 ```
 
-### Step 4. Preparing firmware
+### Step 3. Preparing firmware
 
 By default, this script will download the RTL8761 firmware from Realtek's remote server. However, you may need to customize this step if you intend to use a different Bluetooth device firmware.
 
-### Step 5. Building the Kernel
+### Step 4. Building `WSL2-Linux-Kernel` with Bluetooth support
 
 Finally, this will trigger the kernel build:
 

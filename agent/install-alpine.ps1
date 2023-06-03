@@ -37,6 +37,10 @@ Write-Host "> Getting `"AlpineWSL`"..."
 $alpine_wsl_zip = Get-LatestGitHubReleaseBinary -Repo "yuk7/AlpineWSL" -Dir $staging_dir
 Expand-Archive $alpine_wsl_zip $staging_dir
 
+# Set default WSL version to 2
+Write-Host "> Setting default WSL version to 2..."
+Start-Process -FilePath "wsl.exe" -ArgumentList "--set-default-version 2" -NoNewWindow -Wait
+
 # Install Alpine Linux.
 Write-Host "> Installing the `"AlpineWSL`"..."
 Start-Process -FilePath "$staging_dir\Alpine.exe" -NoNewWindow -Wait

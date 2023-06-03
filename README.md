@@ -12,6 +12,8 @@ However, I believe that the scripts used to build its required components do not
 
 You will need to run following `.ps1` scripts using PowerShell that comes with Windows distribution.
 
+**Please note that all the scripts are meant to be run right under the project root of `nxzr-helper`.**
+
 ## Initial setup (installing WSL + usbipd-win)
 
 Before working with the scripts below, you will need to install the WSL for your system first.
@@ -32,7 +34,7 @@ This instruction shows how to build the WSL kernel from scratch.
 
 ### Prerequisite
 
-Assuming you are in WSL + Ubuntu environment, clone the `nxzr-helper` repository right from the WSL.
+Assuming you are within WSL + Ubuntu environment, clone the `nxzr-helper` repository right from the WSL.
 
 ```shell
 git clone https://github.com/preco21/nxzr-helper.git
@@ -85,15 +87,18 @@ We will use [Alpine Linux](https://www.alpinelinux.org/) as a base image to crea
 Run following script to install Alpine Linux to `./staging` directory:
 
 ```powershell
-.\agent\install-alpine-wsl.ps1
+.\agent\install-alpine.ps1
 ```
 
 ### Step 2. Setting up the distro
 
-[WIP]
+To make the distro to support Bluetooth stuffs, run:
 
-FIXME:
-## Step . Extracting the final `.tar` archive
+```powershell
+.\agent\setup-distro.ps1
+```
+
+## Step 3. Extracting the final `.tar` archive
 
 ```powershell
 .\agent\extract-tar.ps1

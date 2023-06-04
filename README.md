@@ -28,11 +28,7 @@ Please note that this script will **also** install [usbipd-win](https://github.c
 
 ## Kernel
 
-`NXZR` uses a tailored WSL kernel in order to run Bluetooth stuffs.
-
-This instruction shows how to build the WSL kernel from scratch.
-
-### Prerequisite
+`NXZR` uses a tailored WSL kernel in order to run Bluetooth stuffs. This instruction shows how to build the WSL kernel from scratch.
 
 Assuming you are within WSL + Ubuntu environment, clone the `nxzr-helper` repository right from the WSL.
 

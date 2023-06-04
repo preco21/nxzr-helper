@@ -8,7 +8,7 @@ However, I believe that the scripts used to build its required components do not
 
 ## Prerequisite
 
-- **Windows 10 (`22H2` or later)**
+- **Windows 10 (22H2 or later)**
 
 You will need to run following `.ps1` scripts using PowerShell that comes with Windows distribution.
 
